@@ -4,9 +4,69 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeopardy</title>
+  <link rel="stylesheet" href="/styles/style-board.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Offside&family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <title>Round 2 - Jeopardy</title>
 </head>
+<!-- all major sections are the same as round 1 -->
 <body>
-  <h1>Double Jeopardy</h1>
+  <main>
+    <img src="/images/JeopardyLogo.png" id='logo'>
+    <h1>Double Jeopardy</h1>
+    <div id='board'>
+      <div class="item category">WHICH LEBOWSKI</div>
+      <div class="item category">FAMOUS RUGS</div>
+      <div class="item category">BOATING SCHOOL</div>
+      <div class="item category">NIC CAGE</div>
+      <div class="item category">NIGHT AT THE MUSEUM</div>
+      <div class="item category">SUP?</div>
+      <div class="item card">$200</div>
+      <div class="item card">$200</div>
+      <div class="item card">$200</div>
+      <div class="item card">$200</div>
+      <div class="item card">$200</div>
+      <div class="item card">$200</div>
+      <div class="item card">$400</div>
+      <div class="item card">$400</div>
+      <div class="item card">$400</div>
+      <div class="item card">$400</div>
+      <div class="item card">$400</div>
+      <div class="item card">$400</div>
+      <div class="item card">$600</div>
+      <div class="item card">$600</div>
+      <div class="item card">$600</div>
+      <div class="item card">$600</div>
+      <div class="item card">$600</div>
+      <div class="item card">$600</div>
+      <div class="item card">$800</div>
+      <div class="item card">$800</div>
+      <div class="item card">$800</div>
+      <div class="item card">$800</div>
+      <div class="item card">$800</div>
+      <div class="item card">$800</div>
+      <div class="item card">$1000</div>
+      <div class="item card">$1000</div>
+      <div class="item card">$1000</div>
+      <div class="item card">$1000</div>
+      <div class="item card">$1000</div>
+      <div class="item card">$1000</div>
+    </div>
+    <form>
+      <input type='text' placeholder='What is...?' id='text-box' >
+      <input type='submit' value='Guess' id='guess' disabled>
+      <input type='submit' value='Pass' id='pass' disabled>
+    </form>
+  </main>
+  <footer>
+    <div id='score'>
+      <h3>Player One Score: 1000</h3>
+      <h3>Turn: Player One</h3>
+      <h3>Player Two Score: 700</h3>
+    </div>
+    <a href="/final-jeopardy.html">Next Round</a>
+</footer>
+
 </body>
 </html>

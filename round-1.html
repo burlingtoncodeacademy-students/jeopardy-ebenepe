@@ -4,9 +4,74 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeopardy</title>
+  <link rel="stylesheet" href="/styles/style-board.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Offside&family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <title>Round 1 - Jeopardy</title>
 </head>
 <body>
-  <h1>Round One</h1>
+  <main>
+    <!-- logo & round indication -->
+    <img src="/images/JeopardyLogo.png" id='logo'>
+    <h1>Round One</h1>
+    <!-- setup main game board -->
+    <div id='board'>
+      <!-- categories -->
+      <div class="item category">FAMOUS TITLES</div>
+      <div class="item category">WHODUNNIT</div>
+      <div class="item category">PUN AMOK</div>
+      <div class="item category">JELLYBEANS</div>
+      <div class="item category">HISTORICAL FIGURES</div>
+      <div class="item category">JOHN DENVER</div>
+      <!-- numbers -->
+      <div class="item card">$100</div>
+      <div class="item card">$100</div>
+      <div class="item card">$100</div>
+      <div class="item card">$100</div>
+      <div class="item card">$100</div>
+      <div class="item card">$100</div>
+      <div class="item card">$200</div>
+      <div class="item card">$200</div>
+      <div class="item card">$200</div>
+      <div class="item card">$200</div>
+      <div class="item card">$200</div>
+      <div class="item card">$200</div>
+      <div class="item card">$300</div>
+      <div class="item card">$300</div>
+      <div class="item card">$300</div>
+      <div class="item card">$300</div>
+      <div class="item card">$300</div>
+      <div class="item card">$300</div>
+      <div class="item card">$400</div>
+      <div class="item card">$400</div>
+      <div class="item card">$400</div>
+      <div class="item card">$400</div>
+      <div class="item card">$400</div>
+      <div class="item card">$400</div>
+      <div class="item card">$500</div>
+      <div class="item card">$500</div>
+      <div class="item card">$500</div>
+      <div class="item card">$500</div>
+      <div class="item card">$500</div>
+      <div class="item card">$500</div>
+    </div>
+    <!-- user input in form -->
+    <form>
+      <input type='text' placeholder='What is...?' id='text-box' >
+      <input type='submit' value='Guess' id='guess' disabled>
+      <input type='submit' value='Pass' id='pass' disabled>
+    </form>
+  </main>
+  <!-- score, turn displays & next round link in footer-->
+  <footer>
+    <div id='score'>
+      <h3>Player One Score: 1000</h3>
+      <h3>Turn: Player One</h3>
+      <h3>Player Two Score: 700</h3>
+    </div>
+    <a href="/round-2.html">Next Round</a>
+</footer>
+
 </body>
 </html>

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Offside', sans-serif;
+    color: white;
+}
+
+/* jeopardy logo styling */
+img {
+    width: 70%;
+    filter: drop-shadow(10px 5px 5px black)
+}
+
+/* flex to center all subcategories */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/jeopardy-background-2.jpg);
+    background-size: 100% 100%;
+}
+
+/* rules for 'start' button, diff hover color */
+input {
+    margin-top: 3em;
+    padding: 0.5em;
+    width: 10em;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: goldenrod;
+    box-shadow: 5px 5px 5px black ;
+}
+
+input:hover {
+    background-color: rgb(212, 212, 0);
+}
+
+/* rules for header */
+h1 {
+    padding: 1em;
+    font-size: 3em;
+    text-align: center;
+    filter: drop-shadow(5px 5px 5px black)
+}
