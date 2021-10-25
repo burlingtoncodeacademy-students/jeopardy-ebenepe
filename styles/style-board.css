@@ -8,7 +8,7 @@ body {
     margin-top: 1em;
     height: 100vh;
     background-image: url(/images/jeopardy-background-2.jpg);
-    background-size: 100% 100%;
+    background-size: 100% 150%;
 }
 
 /* main flexbox for larger sections, centering, general orientation */
@@ -26,7 +26,7 @@ main {
 }
 
 /* header font & styling */
-h1, h2, h3 {
+h1, h2, h3, p {
     filter: drop-shadow(10px 5px 5px black);
     margin: 0.5em;
     font-family: 'Offside', sans-serif;
@@ -38,7 +38,7 @@ h1, h2, h3 {
     display: grid;
     grid-template-rows: 3fr repeat(5, 2fr);
     grid-template-columns: repeat(6, 1fr);
-    height: 60vh;
+    height: 80vh;
     max-width: 95vw;
     font-family: 'Oswald', sans-serif;
     gap: 0.25em;
@@ -69,6 +69,7 @@ h1, h2, h3 {
 .card {
     color: goldenrod;
     font-size: 2.5em;
+    text-align: center;
 }
 
 /* general orientation for form below board */

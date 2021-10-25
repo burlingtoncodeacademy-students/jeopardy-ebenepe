@@ -19,18 +19,26 @@
     <!-- game board, divs for different types of squares-->
     <div id='board'>
       <div class='item category'>
-        <p>NOBEL LAUREATES</p>
+        <p>CATEGORY GOES HERE</p>
       </div>
       <div class='item question'>
-        <p>AT THE AGE OF 78, THIS PERSON BECAME THE FIRST HUMAN TO DECORATE THEIR HOME EXCLUSIVELY WITH CHOCOLATE BUNNIES</p>
+        <p id="final-question"><i>Make a wager up to your maximum point total...</i></p>
       </div>
     </div>
     <!-- user input within form -->
-    <form>
-      <input type='text' placeholder='Wager' class='text-box wager' >
-      <input type='text' placeholder='Answer' class='text-box answer' >
-      <input type='submit' value='Guess' id='guess' disabled>
+    <form onsubmit="return false">
+      <input type='text' placeholder='Place a wager...' class='text-box' id='user-input'>
+      <input type='submit' value='Submit' id='guess'>
     </form>  
   </main>
+  <footer>
+    <div id='score'>
+      <!-- spans to change text within h3 elements for score, turn -->
+      <h3>Player One Score: <span id='score-p1'></span></h3>
+      <h3>Turn: Player <span id='turn'></span></h3>
+      <h3>Player Two Score: <span id='score-p2'></span></h3>
+    </div>
+</footer>
+  <script src="/scripts/final-jeopardy.js"></script>
 </body>
 </html>
