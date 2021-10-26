@@ -4,9 +4,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='/styles/style-final.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Offside&family=Libre+Baskerville&family=Oswald&display=swap" rel="stylesheet"> 
   <title>Final Jeopardy</title>
 </head>
 <body>
-  <h1>Final Jeopardy</h1>
+  <!-- setting up main flex container -->
+  <main>
+    <!-- logo & header -->
+    <img src="/images/JeopardyLogo.png" id='logo'>
+    <h1>Final Jeopardy</h1>
+    <!-- game board, divs for different types of squares-->
+    <div id='board'>
+      <div class='item category'>
+        <p>CATEGORY GOES HERE</p>
+      </div>
+      <div class='item question'>
+        <p id="final-question"><i>Make a wager up to your maximum point total...</i></p>
+      </div>
+    </div>
+    <!-- user input within form -->
+    <form onsubmit="return false">
+      <input type='text' placeholder='Place a wager...' class='text-box' id='user-input'>
+      <input type='submit' value='Submit' id='guess'>
+    </form>  
+  </main>
+  <footer>
+    <div id='score'>
+      <!-- spans to change text within h3 elements for score, turn -->
+      <h3>Player One Score: <span id='score-p1'></span></h3>
+      <h3>Turn: Player <span id='turn'></span></h3>
+      <h3>Player Two Score: <span id='score-p2'></span></h3>
+    </div>
+</footer>
+  <script src="/scripts/final-jeopardy.js"></script>
 </body>
 </html>

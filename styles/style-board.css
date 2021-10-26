@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* setting up body size & background image */
+body {
+    margin-top: 1em;
+    height: 100vh;
+    background-image: url(/images/jeopardy-background-2.jpg);
+    background-size: 100% 150%;
+}
+
+/* main flexbox for larger sections, centering, general orientation */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* styling & sizing logo. drop shadow effect */
+#logo {
+    max-width: 30vw;
+    filter: drop-shadow(10px 5px 5px black)
+}
+
+/* header font & styling */
+h1, h2, h3, p {
+    filter: drop-shadow(10px 5px 5px black);
+    margin: 0.5em;
+    font-family: 'Offside', sans-serif;
+    color: white;
+}
+
+/* setting up grid for game board, styling font, background color for gaps */
+#board {
+    display: grid;
+    grid-template-rows: 3fr repeat(5, 2fr);
+    grid-template-columns: repeat(6, 1fr);
+    height: 80vh;
+    max-width: 95vw;
+    font-family: 'Oswald', sans-serif;
+    gap: 0.25em;
+    background-color: black;
+    box-shadow: 5px 5px 5px black;
+    outline: 2px solid black;
+}
+
+/* general rules for all board squares */
+.item {
+    outline: 1px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 180);
+}
+
+/* specific rules for category squares */
+.category {
+    padding: 0 0.5em 0 0.5em;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.1em;
+}
+
+/* specific rules for number squares */
+.card {
+    color: goldenrod;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* general orientation for form below board */
+form {
+    margin-top: 1.25em;
+    text-align: center;
+}
+
+/* general rules for buttons, text fields */
+input {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black ;
+    font-family: 'Offside', sans-serif;
+    display: block;
+}
+
+/* specific rules for text box */
+#text-box {
+    background-color: rgb(233, 233, 233);
+}
+
+/* change color on hover */
+#text-box:hover {
+    background-color: white;
+}
+
+/* specific rules for guess & pass boxes, hover colors */
+#guess:hover {
+    background-color: yellow;
+}
+
+#pass:hover {
+    background-color: white;
+}
+
+#guess {
+    background-color: goldenrod;
+    display: inline-block;
+}
+
+#pass {
+    background-color: lightgrey;
+    display: inline-block;
+}
+
+/* set up score, player turn displays as flex box, orient them*/
+#score {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1em;
+    margin-right: 1em;
+
+}
+
+/* rules for next round link */
+a {
+    filter: drop-shadow(10px 5px 5px black);
+    margin-right: 1em;
+    margin-bottom: 1.25em;
+    font-size: 1.25em;
+    font-family: 'Offside', sans-serif;
+    color: white;
+    float: right;
+}
+
+a:hover {
+    color: rgb(238, 178, 25);
+}
+
